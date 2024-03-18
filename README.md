@@ -49,7 +49,12 @@
 
 ## Revisão AIOT
 
-###
+### Redes
+
+<p align="center">
+<img src="https://webpovoa.com/wp-content/uploads/2016/03/tabela.png" style="width:700px">
+</p>
+
 
 ### IPv4 e IPv6
 - O IPv6 foi construido pois o IPv4 já estrava ultrapassando e era necessário um protocolo de internet mais potênte
