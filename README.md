@@ -9,7 +9,7 @@
 
 ### Binário
 <p align="center">
-<img src="https://www.cadcobol.com.br/mecaweb_conv_bh.png" style="width:500px">
+<img src="https://www.cadcobol.com.br/mecaweb_num_bin_5.png" style="width:500px">
 </p>
 
 |Bin - Dec | Dec - Bin|
@@ -26,6 +26,10 @@
 | <img src="https://mathmonks.com/wp-content/uploads/2022/08/Hexadecimal-to-Decimal.jpg" style="width:500px">| <img src="https://www.cadcobol.com.br/mecaweb_conv_dh_1.png" style="width:500px">|
 
 ### Héx e Bin
+
+<p align="center">
+<img src="https://www.cadcobol.com.br/mecaweb_conv_bh.png" style="width:500px">
+</p>
 
 |Hex - Bin | Bin - Hex|
 |-|:-:|
