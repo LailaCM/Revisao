@@ -17,4 +17,4 @@
 
 |Hex - Dec | Dec - Hex|
 |-|:-:|
-| <img src="https://static.javatpoint.com/cpages/images/hexadecimal-to-decimal-in-c.png" style="width:500px">| <img src="https://www.cadcobol.com.br/mecaweb_conv_dh_1.png" style="width:500px">|
+| <img src="https://mathmonks.com/wp-content/uploads/2022/08/Hexadecimal-to-Decimal.jpg" style="width:500px">| <img src="https://www.cadcobol.com.br/mecaweb_conv_dh_1.png" style="width:500px">|
