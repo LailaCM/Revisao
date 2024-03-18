@@ -46,3 +46,14 @@
 |***Exercício 9*** _Faça um programa em C (ualize a estrutura for) que leia 10 valores inteiros e: • Encontre e mostre o maior valor • Encontre e mostre o menor valor • Calcule e mostre a média dos números lidos._|
 |***Exercício 10*** _Faça um programa em C que exiba na tela os números ímpares entre 100 e 300._|
 |***Exercício 11*** _Faça um programa em C que receba a idade de 10 pessoas e mostre quantas são maiores que 18 anos._|
+
+## Revisão AIOT
+
+###
+
+### IPv4 e IPv6
+- O IPv6 foi construido pois o IPv4 já estrava ultrapassando e era necessário um protocolo de internet mais potênte
+
+<p align="center">
+<img src="https://jdnetworking.com.br/wp-content/uploads/2020/09/ipv4xipv6-1-1024x576.png" style="width:700px">
+</p>
