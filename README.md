@@ -11,4 +11,4 @@
 
 |Bin - Dec | Dec - Bin|
 |-|:-:|
-| <img src="https://www.wikihow.com/images_en/thumb/a/ae/Convert-from-Binary-to-Decimal-Step-1-Version-6.jpg/v4-460px-Convert-from-Binary-to-Decimal-Step-1-Version-6.jpg.webp" style="width:500px">| <img src="https://www.cadcobol.com.br/mecaweb_conv_db_1.png" style="width:500px">|
+| <img src="https://www.wikihow.com/images_en/thumb/a/ae/Convert-from-Binary-to-Decimal-Step-1-Version-6.jpg/v4-460px-Convert-from-Binary-to-Decimal-Step-1-Version-6.jpg.webp" style="width:500px">| <img src="https://opiratadigital.files.wordpress.com/2014/04/divisao2.png" style="width:500px">|
