@@ -59,6 +59,18 @@
 <img src="https://webpovoa.com/wp-content/uploads/2016/03/tabela.png" style="width:700px">
 </p>
 
+- 2 partes de 128 hosts
+    - 1º x.x.x.0 - x.x.x.127
+    - 2º x.x.x.128 - x.x.x.225
+
+- 4 partes de 64 hosts
+    - 1º x.x.x.0 - x.x.x.63
+    - 2º x.x.x.64 - x.x.x.127
+    - 3º x.x.x.128 - x.x.x.191
+    - 4º x.x.x.192 - x.x.x.225
+
+
+
 
 ### IPv4 e IPv6
 - O IPv6 foi construido pois o IPv4 já estrava ultrapassando e era necessário um protocolo de internet mais potênte
