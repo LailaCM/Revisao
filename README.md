@@ -14,7 +14,7 @@
 
 |Bin - Dec | Dec - Bin|
 |-|:-:|
-| <img src="https://lh3.googleusercontent.com/proxy/BodhL-bjGF_lP8mcsmVxWB7h2KcPlTMtax6x75lWfNcNAtCeGmkIdg2BDDq8TT0ShhN_axTb-EpTiL7h8SPjyh72kXKS-jkUSKd6zXyKGtri9BRMA9ynWrfmYDSnYKBIdAS_H-ZfXLU4B04PI9G3ezxDmjgqB3gElZ0QB7kHRVw8d7u4" style="width:500px">| <img src="https://opiratadigital.files.wordpress.com/2014/04/divisao2.png" style="width:500px">|
+| <img src="https://cecead.com/wp-content/uploads/2019/07/Bin%C3%A1rio-em-Decimal.gif" style="width:500px">| <img src="https://opiratadigital.files.wordpress.com/2014/04/divisao2.png" style="width:500px">|
 
 ### Héxadecimal
 <p align="center">
