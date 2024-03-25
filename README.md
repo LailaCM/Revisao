@@ -35,6 +35,12 @@
 |-|:-:|
 | <img src="https://pt.convertbinary.com/wp-content/uploads/hexadecimal-para-binario-passo-3-1.png" style="width:500px">| <img src="https://pt.convertbinary.com/wp-content/uploads/converta-binario-para-hexadecimal-5.png" style="width:500px">|
 
+### Virtual Box
+- Oque é?
+    - O VirtualBox é um programa de emulação de sistemas operacionais com o qual o usuário pode ter em um único PC uma série de sistemas, sem riscos para sua máquina.
+- Para que é usado?
+    - Os desenvolvedores usam a VirtualBox para fornecer código mais rápido, testando aplicações em diferentes sistemas operacionais e versões.
+
 ## Revisão LOP
 
 ### Programação em C
