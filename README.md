@@ -41,6 +41,7 @@
 - Para que é usado?
     - Os desenvolvedores usam a VirtualBox para fornecer código mais rápido, testando aplicações em diferentes sistemas operacionais e versões.
 
+
 ## Revisão LOP
 
 ### Programação em C
