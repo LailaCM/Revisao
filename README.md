@@ -66,6 +66,18 @@
 <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.6435-9/74420285_1836309606512868_6210110560659308544_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4sTQp9PxBgoAX-cHECO&_nc_ht=scontent-gru2-2.xx&oh=00_AfC1wotJ2ZCfyu_4VfxW5UYIRol4Eh77PVV9Y2vY5IFf9w&oe=6632018D" style="width:700px">
 </p>
 
+### Topologia de redes
+
+<p align="center">
+<img src="https://4.bp.blogspot.com/-l2Iaz9_7H9U/Ue06hhLFVDI/AAAAAAAAABs/8hPN49YKGGo/s1600/tabela.png" style="width:700px">
+</p>
+
+- Alguns exemplos 
+
+<p align="center">
+<img src="https://anlix.io/wp-content/uploads/2022/02/topologia-exempllo-1024x685.png" style="width:700px">
+</p>
+
 ### Redes
 
 <p align="center">
