@@ -101,5 +101,5 @@
 - O IPv6 foi construido pois o IPv4 já estrava ultrapassando e era necessário um protocolo de internet mais potênte
 
 <p align="center">
-<img src="https://jdnetworking.com.br/wp-content/uploads/2020/09/ipv4xipv6-1-1024x576.png" style="width:700px">
+<img src="https://academy.avast.com/hubfs/New_Avast_Academy/Fixed%20Images%20with%20text%20all%20locales/IPv4-vs-IPv6_PT.svg" style="width:700px">
 </p>
