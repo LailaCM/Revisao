@@ -60,6 +60,12 @@
 
 ## Revisão AIOT
 
+### Camadas do modelo OSI
+
+<p align="center">
+<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.6435-9/74420285_1836309606512868_6210110560659308544_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4sTQp9PxBgoAX-cHECO&_nc_ht=scontent-gru2-2.xx&oh=00_AfC1wotJ2ZCfyu_4VfxW5UYIRol4Eh77PVV9Y2vY5IFf9w&oe=6632018D" style="width:700px">
+</p>
+
 ### Redes
 
 <p align="center">
