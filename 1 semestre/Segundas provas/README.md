@@ -1,54 +1,14 @@
 # Revisão
 ## Revisão SOP
-### Bit e Byte
-- Bit (Binário, 0 ou 1)
-- Byte (8 Bits)
-<p align="center">
-<img src="https://networkencyclopedia.com/wp-content/uploads/2023/06/Relationship-between-Bits-and-Bytes-1024x576.webp" style="width:500px">
-</p>
-
-### Binário
-<p align="center">
-<img src="https://www.cadcobol.com.br/mecaweb_num_bin_5.png" style="width:500px">
-</p>
-
-|Bin - Dec | Dec - Bin|
-|-|:-:|
-| <img src="https://cecead.com/wp-content/uploads/2019/07/Bin%C3%A1rio-em-Decimal.gif" style="width:500px">| <img src="https://opiratadigital.files.wordpress.com/2014/04/divisao2.png" style="width:500px">|
-
-### Héxadecimal
-<p align="center">
-<img src="https://www.cadcobol.com.br/mecaweb_num_hex_2.png" style="width:500px">
-</p>
-
-|Hex - Dec | Dec - Hex|
-|-|:-:|
-| <img src="https://mathmonks.com/wp-content/uploads/2022/08/Hexadecimal-to-Decimal.jpg" style="width:500px">| <img src="https://www.cadcobol.com.br/mecaweb_conv_dh_1.png" style="width:500px">|
-
-### Héx e Bin
-
-<p align="center">
-<img src="https://www.cadcobol.com.br/mecaweb_conv_bh.png" style="width:500px">
-</p>
-
-|Hex - Bin | Bin - Hex|
-|-|:-:|
-| <img src="https://pt.convertbinary.com/wp-content/uploads/hexadecimal-para-binario-passo-3-1.png" style="width:500px">| <img src="https://pt.convertbinary.com/wp-content/uploads/converta-binario-para-hexadecimal-5.png" style="width:500px">|
-
-### Virtual Box
-- Oque é?
-    - O VirtualBox é um programa de emulação de sistemas operacionais com o qual o usuário pode ter em um único PC uma série de sistemas, sem riscos para sua máquina.
-- Para que é usado?
-    - Os desenvolvedores usam a VirtualBox para fornecer código mais rápido, testando aplicações em diferentes sistemas operacionais e versões.
 
 
 ## Revisão LOP
 
 ### Programação em C
 
-|Exercícios|
+|Exercício 1|
 |-|
-|***Exercício 1*** _Crie um programa em C que lê o conteúdo de dois arquivos de texto e os mescla em um terceiro arquivo, alternando as linhas de cada um._|
+|_Crie um programa em C que lê o conteúdo de dois arquivos de texto e os mescla em um terceiro arquivo, alternando as linhas de cada um._|
 ``` 
 #include <stdio.h>
 #include <stdlib.h>
@@ -100,8 +60,9 @@ int main() {
     return 0;
 }
 ```
-
-|***Exercício 5*** _Crie um programa em C que lê um arquivo contendo código-fonte em C e remove todos os comentários, salvando o resultado em outro arquivo._|
+|***Exercício 2*** |
+|-|
+|_Crie um programa em C que lê um arquivo contendo código-fonte em C e remove todos os comentários, salvando o resultado em outro arquivo._|
 
 ```
 #include <stdio.h>
@@ -167,48 +128,248 @@ int main() {
 }
 ```
 
+|***Exercício 3*** |
+|-|
+|_Crie um programa em C que lê um arquivo de texto e cria outro arquivo onde todos os espaços em branco e quebras de linha são removidos._|
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL,"");
+	
+    FILE *entrada, *saida;
+    char caractere;
+
+    // Abre o arquivo de entrada para leitura
+    entrada = fopen("arquivo_origem.txt", "r");
+    if (entrada == NULL) {
+        printf("Erro ao abrir o arquivo de entrada.");
+        return 1;
+    }
+
+    // Abre o arquivo de saída para escrita
+    saida = fopen("arquivo_sem_espacos.txt", "w");
+    if (saida == NULL) {
+        printf("Erro ao abrir o arquivo de saída.");
+        fclose(entrada);
+        return 1;
+    }
+
+    // Processa o arquivo de entrada
+    while ((caractere = fgetc(entrada)) != EOF) {
+        if (!isspace(caractere)) { // Verifica se não é espaço em branco
+            fputc(caractere, saida);
+        }
+    }
+
+    // Fecha os arquivos
+    fclose(entrada);
+    fclose(saida);
+
+    printf("Espaços em branco removidos com sucesso.\n");
+
+    return 0;
+}
+
+```
+
+|***Exercício 4*** |
+|-|
+|_Crie um programa em C que lê um arquivo de texto e conta a frequência de cada palavra, salvando o resultado em um arquivo separado._|
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <locale.h>
+
+#define MAX_SIZE 100
+
+// Estrutura para armazenar a palavra e sua frequência
+typedef struct {
+    char palavra[MAX_SIZE];
+    int frequencia;
+} Registro;
+
+// Função para normalizar uma palavra (remover pontuações e tornar minúscula)
+void normalizarPalavra(char *palavra) {
+    int i, j = 0;
+    char novaPalavra[MAX_SIZE];
+
+    for (i = 0; palavra[i] != '\0'; i++) {
+        if (isalpha(palavra[i])) {
+            novaPalavra[j++] = tolower(palavra[i]);
+        }
+    }
+    novaPalavra[j] = '\0';
+    strcpy(palavra, novaPalavra);
+}
+
+int main() {
+	setlocale(LC_ALL,"");
+	
+    FILE *entrada, *saida;
+    char palavra[MAX_SIZE];
+    Registro registros[MAX_SIZE];
+    int numRegistros = 0;
+
+    // Abre o arquivo de entrada para leitura
+    entrada = fopen("arquivo_entrada.txt", "r");
+    if (entrada == NULL) {
+        printf("Erro ao abrir o arquivo de entrada.");
+        return 1;
+    }
+
+    // Processa o arquivo de entrada
+    while (fscanf(entrada, "%s", palavra) != EOF) {
+        normalizarPalavra(palavra);
+
+        // Verifica se a palavra já foi registrada
+        int i, encontrada = 0;
+        for (i = 0; i < numRegistros; i++) {
+            if (strcmp(registros[i].palavra, palavra) == 0) {
+                registros[i].frequencia++;
+                encontrada = 1;
+                break;
+            }
+        }
+        // Se a palavra não foi encontrada, adiciona ao registro
+        if (!encontrada) {
+            strcpy(registros[numRegistros].palavra, palavra);
+            registros[numRegistros].frequencia = 1;
+            numRegistros++;
+        }
+    }
+
+    // Fecha o arquivo de entrada
+    fclose(entrada);
+
+    // Abre o arquivo de saída para escrita
+    saida = fopen("frequencia_palavras.txt", "w");
+    if (saida == NULL) {
+        printf("Erro ao abrir o arquivo de saída.");
+        return 1;
+    }
+
+    // Escreve a frequência das palavras no arquivo de saída
+    int i;
+    for (i = 0; i < numRegistros; i++) {
+        fprintf(saida, "%s: %d\n", registros[i].palavra, registros[i].frequencia);
+    }
+
+    // Fecha o arquivo de saída
+    fclose(saida);
+
+    printf("Frequência das palavras salva com sucesso.\n");
+
+    return 0;
+}
+```
+
+|***Exercício 5*** |
+|-|
+|_Crie um programa em C que lê um arquivo de texto, encripta seu conteúdo usando uma cifra de substituição simples, e salva o resultado em outro arquivo._|
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+#define SHIFT 3 // Número de deslocamento para a cifra de substituição
+
+int main() {
+	setlocale(LC_ALL,"");
+    FILE *entrada, *saida;
+    char caractere;
+
+    // Abre o arquivo de entrada para leitura
+    entrada = fopen("arquivo_original.txt", "r");
+    if (entrada == NULL) {
+        printf("Erro ao abrir o arquivo de entrada.");
+        return 1;
+    }
+
+    // Abre o arquivo de saída para escrita
+    saida = fopen("arquivo_criptografado.txt", "w");
+    if (saida == NULL) {
+        printf("Erro ao abrir o arquivo de saída.");
+        fclose(entrada);
+        return 1;
+    }
+
+    // Criptografa o arquivo de entrada e escreve no arquivo de saída
+    while ((caractere = fgetc(entrada)) != EOF) {
+        if (caractere >= 'a' && caractere <= 'z') {
+            caractere = 'a' + (caractere - 'a' + SHIFT) % 26;
+        } else if (caractere >= 'A' && caractere <= 'Z') {
+            caractere = 'A' + (caractere - 'A' + SHIFT) % 26;
+        }
+        fputc(caractere, saida);
+    }
+
+    // Fecha os arquivos
+    fclose(entrada);
+    fclose(saida);
+
+    printf("Arquivo criptografado com sucesso.\n");
+
+    return 0;
+}
+```
+
+|***Exercício 6*** |
+|-|
+|_Crie um programa em C que lê o arquivo de texto do ex 5, desencripta seu conteúdo e salva o resultado em outro arquivo._|
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+#define SHIFT 3 // Número de deslocamento para a cifra de substituição
+
+int main() {
+	setlocale(LC_ALL,"");
+    FILE *entrada, *saida;
+    char caractere;
+
+    // Abre o arquivo de entrada para leitura
+    entrada = fopen("arquivo_criptografado.txt", "r");
+    if (entrada == NULL) {
+        printf("Erro ao abrir o arquivo de entrada.");
+        return 1;
+    }
+
+    // Abre o arquivo de saída para escrita
+    saida = fopen("arquivo_descriptografado.txt", "w");
+    if (saida == NULL) {
+        printf("Erro ao abrir o arquivo de saída.");
+        fclose(entrada);
+        return 1;
+    }
+
+    // Descriptografa o arquivo de entrada e escreve no arquivo de saída
+    while ((caractere = fgetc(entrada)) != EOF) {
+        if (caractere >= 'a' && caractere <= 'z') {
+            caractere = 'a' + (caractere - 'a' - SHIFT + 26) % 26;
+        } else if (caractere >= 'A' && caractere <= 'Z') {
+            caractere = 'A' + (caractere - 'A' - SHIFT + 26) % 26;
+        }
+        fputc(caractere, saida);
+    }
+
+    // Fecha os arquivos
+    fclose(entrada);
+    fclose(saida);
+
+    printf("Arquivo descriptografado com sucesso.\n");
+
+    return 0;
+}
+```
+
 ## Revisão AIOT
-
-### Camadas do modelo OSI
-
-<p align="center">
-<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.6435-9/74420285_1836309606512868_6210110560659308544_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4sTQp9PxBgoAX-cHECO&_nc_ht=scontent-gru2-2.xx&oh=00_AfC1wotJ2ZCfyu_4VfxW5UYIRol4Eh77PVV9Y2vY5IFf9w&oe=6632018D" style="width:700px">
-</p>
-
-### Topologia de redes
-
-<p align="center">
-<img src="https://4.bp.blogspot.com/-l2Iaz9_7H9U/Ue06hhLFVDI/AAAAAAAAABs/8hPN49YKGGo/s1600/tabela.png" style="width:700px">
-</p>
-
-- Alguns exemplos 
-
-<p align="center">
-<img src="https://anlix.io/wp-content/uploads/2022/02/topologia-exempllo-1024x685.png" style="width:700px">
-</p>
-
-### Redes
-
-<p align="center">
-<img src="https://webpovoa.com/wp-content/uploads/2016/03/tabela.png" style="width:700px">
-</p>
-
-- 2 partes de 128 hosts
-    - 1º x.x.x.0 - x.x.x.127
-    - 2º x.x.x.128 - x.x.x.225
-
-- 4 partes de 64 hosts
-    - 1º x.x.x.0 - x.x.x.63
-    - 2º x.x.x.64 - x.x.x.127
-    - 3º x.x.x.128 - x.x.x.191
-    - 4º x.x.x.192 - x.x.x.225
-
-
-
-
-### IPv4 e IPv6
-- O IPv6 foi construido pois o IPv4 já estrava ultrapassando e era necessário um protocolo de internet mais potênte
-
-<p align="center">
-<img src="https://academy.avast.com/hubfs/New_Avast_Academy/Fixed%20Images%20with%20text%20all%20locales/IPv4-vs-IPv6_PT.svg" style="width:700px">
-</p>
