@@ -1,6 +1,36 @@
 # Revisão
 ## Revisão SOP
 
+### O que é segurança cibernética?
+
+- **Segurança cibernética** é o conjunto de **medidas e práticas para proteger sistemas computacionais**, redes e dados contra ataques e ameaças digitais, garantindo sua integridade, confidencialidade e disponibilidade.
+
+### Qual a importância da Segurança Cibernética?
+- Segurança Cibernética é crucial para proteger dados, sistemas e serviços contra ameaças digitais, garantindo integridade, disponibilidade e confidencialidade, evitando prejuízos financeiros e preservando a reputação das organizações.
+
+### Evolução da Segurança Cibernética
+- A Segurança Cibernética evoluiu de medidas básicas para formas mais avançadas, incorporando tecnologias como inteligência artificial e aprendizado de máquina para detectar e responder a ameaças, impulsionando investimentos e treinamentos para evitar riscos crescentes.
+
+### O que são vulnerabilidades?
+- Vulnerabilidades são fraquezas em sistemas, redes ou aplicativos que podem ser exploradas por invasores para comprometer a segurança e permitir acesso não autorizado, roubo de dados ou interrupção dos serviços. 
+
+### Principais vulnerabilidades
+- Falhas de software, como falta de atualizações de segurança. A engenharia social, que explora a confiança dos usuários, e configurações inadequadas de sistemas também representam ameaças significativas à segurança cibernética.
+
+### Ataques comuns
+
+- As **ameaças cibernéticas mais comuns** incluem **malware**, como vírus e ransomware, **ataques de phishing** que visam obter informações pessoais e financeiras, e **violações de dados** por meio de vulnerabilidades de segurança em sistemas e redes.
+
+### Principais vírus
+- Vírus de arquivo, de boot, de macro, worms, cavalos de Troia e ransomware, cada um com métodos específicos de infecção e impacto nos sistemas.
+
+### Ataques famosos
+
+- O **ataque à SolarWinds** foi um ataque de cadeia de suprimentos que comprometeu o software de gerenciamento de rede da SolarWinds, chamado Orion, **distribuindo um malware chamado "Sunburst"**. Isso permitiu aos invasores acesso não autorizado a milhares de organizações em todo o mundo, levantando preocupações sobre a segurança cibernética das cadeias de suprimentos de software.
+
+### Antivírus mais famoso
+- O Norton Antivirus, desenvolvido pela NortonLifeLock, ganhou grande destaque como um dos antivírus mais reconhecidos por sua eficácia na detecção e remoção de ameaças cibernéticas.
+
 
 ## Revisão LOP
 
