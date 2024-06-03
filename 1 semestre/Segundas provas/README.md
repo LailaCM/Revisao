@@ -98,9 +98,11 @@ int main() {
     printf("Arquivos mesclados com sucesso.\n");
 
     return 0;
-}```
+}
+```
 
 |***Exercício 5*** _Crie um programa em C que lê um arquivo contendo código-fonte em C e remove todos os comentários, salvando o resultado em outro arquivo._|
+
 ```
 #include <stdio.h>
 #include <stdlib.h>
