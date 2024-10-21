@@ -33,7 +33,29 @@
 - A normalização é um processo de organização de dados em um banco de dados que visa a evitar redundâncias e anomalias, e a garantir a integridade e consistência dos dados.
 
 ### Exemplo de SQL
-- [Exemplo - SQL ](Escola.sql)
+
+```
+drop database if exists escola;
+create database escola;
+use escola;
+
+create table alunos(
+    id int not null primary key auto_increment,
+    nome varchar(100) not null,
+    data_nascimento date not null,
+    email varchar(100) not null
+);
+
+show tables;
+
+insert into alunos values
+(null,'Bia Vizeu', '2008-04-19', 'bia.vizeu.salles@gmail.com'),
+(null,'Laila Casadei', '2007-07-20', 'lailacmacedo07@gmail.com'),
+(null,'Milena Feliz', '2008-06-14', 'milena.felizebelo@gmail.com');
+
+
+select * from alunos;
+```
 
 ### Estrutura básica de um banco de dados relacional
 
