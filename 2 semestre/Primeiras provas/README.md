@@ -15,13 +15,21 @@
 |Tomcat|Java|
 |v8|NodeJS|
 
+### Respostas
+
+|Resposta|Significado|
+|-|:-:|
+|200|Sucesso|
+|300|Redirecionamento|
+|400|Erro de cliente|
+|500|Erro de servidor|
+
 ## Revisão BCD
 ### Maiores nuvens
 - Amazon - AWS
 - Google - GCP
 - Microsoft - Azure
 
-## Revisão BCD
 ### Bancos de dados relacionais x não-relacionais
 
 - Bancos de dados relacionais são sistemas de gerenciamento de dados estruturados, baseados em tabelas, como MySQL ou Oracle.  Bancos de dados não-relacionais são sistemas de gerenciamento de dados que permitem armazenar e recuperar dados em formatos diferentes das tabelas tradicionais.  O MongoDB, um exemplo de NoSQL.
